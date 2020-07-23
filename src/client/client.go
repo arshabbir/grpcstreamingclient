@@ -66,7 +66,7 @@ func (c *client) Start() {
 
 		sensorID := fmt.Sprintf("%d", rand.Intn(10))
 		reading := rand.Float32()
-		requestID := fmt.Sprintf("%d", time.Now().Unix())
+		requestID := fmt.Sprintf("%d", time.Now().UnixNano())
 
 		log.Println(fmt.Sprintf("Sending..%s, %f, %s", sensorID, reading, requestID))
 
