@@ -74,7 +74,7 @@ func (c *client) Start() {
 			log.Println("Error in Sending to stream")
 			break
 		}
-		time.Sleep(time.Millisecond)
+		time.Sleep(time.Second)
 	}
 	wg.Wait()
 }
